@@ -1,0 +1,6 @@
+unzip tiny210v2-uboot-master.zip
+cd tiny210v2-uboot-master
+make ARCH=arm CROSS_COMPILE=/home/s5pv210/test0108/opt/FriendlyARM/toolschain/4.5.1/bin/arm-none-linux-gnueabi- tiny210_config
+make ARCH=arm CROSS_COMPILE=/home/s5pv210/test0108/opt/FriendlyARM/toolschain/4.5.1/bin/arm-none-linux-gnueabi- all
+sudo dd iflag=dsync oflag=dsync if=tiny210v2-uboot.bin of=/dev/sdb seek=1
+
