@@ -444,7 +444,8 @@ int copy_uboot_to_ram_nand (void)
 		//large_block = 2;
 		debug("256MB(SLC) ");
 	}
-	else if(0xECDC1095 == id)
+	//else if(0xECDC1095 == id)
+	else if(0xECD35195 == id)
 	{
 		large_block = 1;
 		//page_size 2k
